@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Shamanic Yoga in da Cyprus. Ayia Napa at its finest!">
+    <title>Modern Shamanic Yoga</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header .overlay h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header .overlay p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .classes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .class {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .sale-banner {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            transform: translateY(-50%);
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+<header>
+    <img id="headerImage" src="images/shaman/Gandalf%20Grey.jpg" alt="Shaman Yoga image">
+    <div class="overlay">
+        <h1>Shaman</h1>
+        <p>a quest. a journey. a trip. Let's go!</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Shamanism</h2>
+    <p style="text-align:center">It's right at the edge of being legal. Half of the things are in the grey area. The
+        other half is already outlawed. It's your daily life, of course. All my herbs are super natural and legal! No
+        drugs, only magic.</p>
+</section>
+
+<section id="classes">
+    <h2>Magic Sessions</h2>
+    <p style="text-align:center">€55 per hour</p>
+    <div class="classes">
+        <div class="class">
+            <h3>Babysitting</h3>
+            <p>🧑‍⚕️'m here if you need to talk. </p>
+        </div>
+        <div class="class">
+            <h3>Reiki</h3>
+            <p>💆'm here if you need to Reiki.</p>
+        </div>
+        <div class="class">
+            <h3>Exorcism</h3>
+            <p>🧑‍🏭'm here if you need to let it out.</p>
+        </div>
+    </div>
+</section>
+
+<section id="classes">
+    <h2>Healing Aromas</h2>
+    <p style="text-align:center">€11 per gram</p>
+    <div class="classes">
+        <div class="class">
+            <h3>Professor Doubledoor</h3>
+            <p>🧙‍♂️</p>
+            <p><small>Morning Glory Seeds, Caapi, Damiana</small></p>
+            <p><strong>Duration:</strong> 1 hour</p>
+        </div>
+        <div class="class">
+            <h3>Serious Snap</h3>
+            <p>🥒</p>
+            <p><small>Salvia Divinorum, Blue Lotus Flowers, Bacopa Monnieri, Wild Dagga</small></p>
+            <p><strong>Duration:</strong> 1 hour</p>
+        </div>
+        <div class="class">
+            <h3>Muggler's™</h3>
+            <p>🧚🏻</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>Ron Grizzly</h3>
+            <p>🐻</p>
+            <p><small>Bacopa Monnieri, Kanna, Trichilia Catigua</small></p>
+            <p><strong>Duration:</strong> 2 hours</p>
+        </div>
+        <div class="class">
+            <h3>Friends'r'friends®</h3>
+            <p>🍭</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>hermind2®: Her Name Was Mini</h3>
+            <p>🌹</p>
+            <p><small>Rosa Acicularis, </small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>Peter Pedigree™</h3>
+            <p>🧀</p>
+            <p><small>Ashwaghandha, Brahmi, Chamomile</small></p>
+            <p><strong>Time:</strong> x hours</p>
+        </div>
+        <div class="class">
+            <h3>That-one-what's-the-name©</h3>
+            <p>🐨</p>
+            <p><small>Cebil Seeds, Passion Flower, Trichilia</small></p>
+            <p><strong>Duration:</strong> 1 hour</p>
+        </div>
+        <div class="class">
+            <h3>Immortal Spirituality Of Adventure</h3>
+            <p>🦄</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>A Big Snake</h3>
+            <p>🐉</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>The Smoking Hat</h3>
+            <p>👵🏽</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <div class="class">
+            <h3>English Break Fast</h3>
+            <p>👳🏿</p>
+            <p><small>Mugwort</small></p>
+            <p><strong>Duration:</strong> 30 minutes</p>
+        </div>
+</section>
+
+<section id="classes">
+    <h2>Divine Wines</h2>
+    <p style="text-align:center">€33 per vial</p>
+    <div class="classes">
+        <div class="class">
+            <h3>De Coction</h3>
+            <p>I shouldn't really call it a "De Coction". Because grammatically correct infusion of its name and essence
+                would be an "In Fusion". Defusion of your karmic bomb. 👌🏻l'émotion!</p>
+            <p><small>Ipomoea Tricolor, Salvia Divinorum, Calea Zacatechichi, Turnera Diffusa, Nymphaea Caerulea</small>
+            </p>
+            <p><strong>Form:</strong> infusion</p>
+            <p><strong>Duration:</strong> x-x hours </p>
+        </div>
+        <div class="class">
+            <h3>Divan Getaway</h3>
+            <p>Divine enchantment contra vanity, or, paraprasing Christ, a gateway to immortality! A getaway, to get
+                away from the mundanity. 🪄*divanity!*</p>
+            <p><small>Anadenanthera Colubrina, Peganum Harmala, Salvia Divinorum, Nymphaea Caerulea</small></p>
+            <p><strong>Form:</strong> decoction</p>
+            <p><strong>Duration:</strong> 6-8 hours</p>
+        </div>
+        <div class="class">
+            <h3>Shadow Orc</h3>
+            <p>He👹dwells in shadows of your mind. Here, take this potion. Now, go fight!</p>
+            <p><small>Artemisia Vulgaris, Calliandra Angustifolia, Peganum Harmala, Banisteriopsis Caapi</small></p>
+            <p><strong>Form:</strong> decoction</p>
+            <p><strong>Duration:</strong> x-x hours </p>
+        </div>
+        <div class="class">
+            <h3>Comsic.</h3>
+            <p>A cosmic joke that I revere myself as me. Because I really am the 🌌, you see? Such .com, so sic.</p>
+            <p><small>Argyreia Nervosa, Peganum Harmala, Artemisia Vulgaris</small></p>
+            <p><strong>Form:</strong> decoction</p>
+            <p><strong>Duration:</strong> x-x hours</p>
+        </div>
+        <div class="class">
+            <h3>Rapé >_<</h3>
+            <p>I don't like Kurt Cobain and his cocaine. He must be very dead by now. Not worth it. Vive la 27 Club et
+                viv' la mort! 🎸*R.I.P. Rap Rapé!* It rhymes, ok?</p>
+            <p><small>Rapé, Artemisia Vulgaris, Anadenanthera Colubrina</small></p>
+            <p><strong>Form:</strong> snuff</p>
+            <p><strong>Duration:</strong> x-x hours </p>
+        </div>
+        <div class="class">
+            <h3>Chi-Chi. Zacate Chi-Chi.</h3>
+            <p>Just tried to make a reverence to someone that I knew. Her name was Gigi. Left me with a broken car. In
+                Melbourne. Gigi, I still [words for karma] you.💔
+            <p>
+            <p><small>Calea Zacatechichi, Artemisia Vulgaris, Argyreia Nervosa, Lactuca Virosa</small></p>
+            <p><strong>Form:</strong> infusion </p>
+            <p><strong>Duration:</strong> x-x hours </p>
+        </div>
+        <div class="class">
+            <h3>Lucid Waking</h3>
+            <p>I wake up in the middle of the light. I see this word. Hope, it's alright. It was 'alright', now comma,
+                now the 'now', now ',', separating 'now' from '💡'</p>
+            <p><small>Ipomoea Tricolor, Artemisia Vulgaris, Turnera Diffusa, Nymphaea Caerulea</small></p>
+            <p><strong>Form:</strong> infusion</p>
+            <p><strong>Duration:</strong> x-x hours</p>
+        </div>
+        <div class="class">
+            <h3>Wild **gga</h3>
+            <p>Leonotis Leonurus: Wild Dagga;
+                Artemisia Vulgaris: Mugwort;
+                Nymphaea Caerulea: Egyptian Lotus;
+                Silene Capensis: Dream Root;
+                Turnera Diffusa: Damiana;
+                Pedicularis Densiflora: ...
+                Of course, I meant Wild Dagga. 👮🏿‍♀️<i>alles gut</i></p>
+            <p><small>Leonotis Leonurus, Artemisia Vulgaris, Silene Capensis, Turnera Diffusa, Pedicularis
+                Densiflora</small></p>
+            <p><strong>Form:</strong> decoction</p>
+            <p><strong>Duration:</strong> x-x hours</p>
+        </div>
+        <div class="class">
+            <h3>ethereal_engine.3l1x1r</h3>
+            <code>🧑🏾‍💻{while(time!=0){indra=111;indra_mahadev="555"+indra; time=indra_mahadev;
+                indra_mahadev=-1;return;}exit;};</code>
+            <p><small>Anadenanthera Colubrina, Silene Capensis, Calliandra Angustifolia</small></p>
+            <p><strong>Form:</strong> elixir</p>
+            <p><strong>Duration:</strong> x-x hours </p>
+        </div>
+        <div class="class">
+            <h3>So Ma</h3>
+            <p>...souh-ma-a-a-vahn-na-a-a-ra-hant...<br>...ha-ra-*counts the💸*-de-e-e-va...chant</p>
+            <p><small>Salvia Divinorum, Lactuca Virosa, Zornia Latifolia, Pedicularis Densiflora</small></p>
+            <p><strong>Form:</strong> infusion</p>
+            <p><strong>Duration:</strong> x-x hours</p>
+        </div>
+        <div class="class">
+            <h3>Bobinsane</h3>
+            <p>Enjoy your Bobinsane like I enjoy its name. Unleash the Bobinsanity. Be like the Billie Eilish. Wear 🥾
+                that must have realized eternity.</p>
+            <p><small>Calliandra Angustifolia (Bobinsana), Banisteriopsis Caapi, Jurema Tenuiflora</small></p>
+            <p><strong>Form:</strong> decoction </p>
+            <p><strong>Duration:</strong> x-x hours</p>
+        </div>
+        <div class="class">
+            <h3>Me In My 3€-teas</h3>
+            <div id="teaName" style="font-size: 1em;
+      margin-bottom: 20px;
+      text-align: center;">*looks at the button*
+            </div>
+            <button id="teaButton">clicks</button>
+            <p><strong>Form: </strong>random tea with honey</p>
+            <p><strong>Duration: </strong>*looks at the price*</p>
+            <p><strong>Price:</strong> €3 </p>
+        </div>
+
+    </div>
+    <div id="mushroom" style="font-size: 2em; position: absolute; cursor: pointer;">🍄</div>
+</section>
+
+<section id="classes">
+    <h2>Sex Oils</h2>
+    <p style="text-align:center">€22 per vial</p>
+    <div class="classes">
+        <div class="class">
+            <h3>Soaring Oil Princess</h3>
+            <p>⚕️Blended for relaxation, spiritual clarity, and deepening your meditative and spiritual
+                practices, princess.</p>
+            <p><small>Coconut Oil, Wild Dagga, Ashwagandha, Ylang-Ylang Oil</small></p>
+            <p><strong>Form:</strong> massage oil</p>
+            <p><strong>Duration:</strong> until rinsed </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="classes">
+    <h2>Regular Foods</h2>
+    <p style="text-align:center">€3.99 per food</p>
+    <div class="classes">
+
+        <div class="class">
+            <h3>Homie, I'm Hone</h3>
+            <p>Honey, I'm the homiest🐝</p>
+            <p><small>Zingiber Officinale, Rosa, Honey, Citrus Paradisi</small></p>
+            <p><strong>Form:</strong> honey jam </p>
+            <p><strong>Duration:</strong> 30 minutes </p>
+        </div>
+
+        <div class="class">
+            <h3>Choo-choco-chew®</h3>
+            <p>All aboard the Willibonkit® train!🍫</p>
+            <p><small>Theobroma Cacao, Honey, Nescafé Classic, Bos Taurus Milk</small></p>
+            <p><strong>Form:</strong> chocolate </p>
+            <p><strong>Duration:</strong> 1 hour </p>
+        </div>
+
+        <div class="class">
+            <h3>Staple Food</h3>
+            <p>Dried durian. 1 small piece🌴 </p>
+            <p><small>Durio Zibethinus</small></p>
+            <p><strong>Form:</strong> dried organism </p>
+            <p><strong>Duration:</strong> 1 hour </p>
+        </div>
+
+        <div class="class">
+            <h3>Harry Cream</h3>
+            <p>The dual force of ancient nature🌳</p>
+            <p><small>Bos Taurus Milk, Honey</small></p>
+            <p><strong>Form:</strong> ice cream </p>
+            <p><strong>Duration:</strong> 1 hour </p>
+        </div>
+
+        <div class="class">
+            <h3>Harry Protein</h3>
+            <p>The dual force of ancient nature🌳 and modern science🥼</p>
+            <p><small>Bos Taurus Milk, Optimum Nutrition Protein</small>
+            <p><strong>Form:</strong>  infusion</p>
+            <p><strong>Duration:</strong> 30 minutes </p>
+        </div>
+
+        <div class="class">
+            <h3>Harry Caffeine</h3>
+            <p>The dual force of ancient nature🌳 and modern science🥼, plus Nescafé ☕</p>
+            <p><small>Bos Taurus Milk, Optimum Nutrition Protein, Nescafé Classic</small>
+            <p><strong>Form:</strong> warm infusion</p>
+            <p><strong>Duration:</strong> 90 minutes </p>
+        </div>
+    </div>
+</section>
+
+<section id="classes">
+    <h2>Amulets</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Game Of Roys</h3>
+            <p>𓀨 𓀿 𓁏 𓁟</p>
+            <p><small>A budget-friendly yoga mat.</small></p>
+            <p><strong>Duration:</strong> potentially, a lifetime (if never used)</p>
+            <p><strong>Price:</strong> €55 </p>
+        </div>
+        <div class="class">
+            <h3>We're Ra</h3>
+            <p>𓁢 <a id="setLink" style="cursor:pointer">𓁣</a> 𓁢 𓁤 𓁦 𓁶 𓀌 𓀌 𓀌 𓂶 𓂀</p>
+            <p><small>A golden ankh.</small></p>
+            <p><strong>Duration:</strong> potentially, a few lifetimes (if used)</p>
+            <p><strong>Price:</strong> €555 </p>
+        </div>
+        <div class="class">
+            <h3>A Body Of A Christ</h3>
+            <p>𓀒</p>
+            <p><small>A golden Jesus. The cross is sold separately.</small></p>
+            <p><strong>Duration:</strong> at least 33 years (before turning into a major religion)</p>
+            <p><strong>Price:</strong> SOLD OUT</p>
+        </div>
+</section>
+
+<section id="classes">
+    <h2>:Deals:</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Buddhabuilder 🍯🧘🏿‍♀️🥛</h3>
+            <p>Girl, look at that buddha (Ah)</p>
+            <p><small>Honey, I'm hone + Yoga + Harry Protein</small></p>
+            <p><strong>Only:</strong> €99 (save €9.98) </p>
+        </div>
+        <div class="class">
+            <h3>So Ma's sage 🌿💆🏻‍♀️☕</h3>
+            <p>Such dealed!</p>
+            <p><small>So Ma + Thai Massage</small></p>
+            <p><strong>Only:</strong> €99 (save €33) </p>
+        </div>
+        <div class="class">
+            <h3>Mario Cart 🛒💦🧋</h3>
+            <p>All hail the mighty dragon!</p>
+            <p><small>Sex + Soaring Oil Princess</small></p>
+            <p><strong>Only:</strong> €222 (save €22) </p>
+        </div>
+        <div class="class">
+            <h3>All you can eat 🐖🐖🐖</h3>
+            <p>Up to 8 hours. You can even rapé me.</p>
+            <p><small>Everything in the menu + Rapé >_< (optional)</small></p>
+            <p><strong>Only:</strong> €222 (save the shaman) </p>
+        </div>
+        <div class="class">
+            <h3>ICU on URANUS 🍹😶‍🌫️🪐</h3>
+            <p> 1 drink. 2 vapes. 3(!)hours.</p>
+            <p><small>1 wine + 2 aromas + 3 hours of Exorcism</small></p>
+            <p><strong>Only:</strong> €222 (save €-2) </p>
+        </div>
+        <div class="class">
+            <h3>3 equals 2.5 🌕🌕🌓</h3>
+            <p>The value of it!</p>
+            <p><small>Any 3 positions (not the ankh) will cost you like 2.5</small></p>
+            <p><strong>Only:</strong> for now </p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only
+        and does not constitute any form of financial or transactional charge.
+        The availability or absence of items and services is not guaranteed. Nothing here is guaranteed.
+    Aging and death are guaranteed.</small></p>
+</footer>
+
+<script>
+    // Array of tea names without trailing commas
+    const teas = [
+      "Mountain Tea", "Brahmi", "Mugwort", "Damiana", "Lavender", "Ashwagandha", "Catuaba", "Passion Flower"
+    ];
+
+    // Function to display three random teas
+    document.getElementById("teaButton").addEventListener("click", function () {
+      // Get three random teas
+      const randomTeas = [];
+      while (randomTeas.length < 3) {
+        const randomTea = teas[Math.floor(Math.random() * teas.length)];
+        if (!randomTeas.includes(randomTea)) {
+          randomTeas.push(randomTea);
+        }
+      }
+
+      // Display the teas separated by commas without trailing commas
+      document.getElementById("teaName").textContent = randomTeas.join(", ") + ".";
+    });
+</script>
+
+
+<script>
+    let currentIndex = 0;
+    let mushroomClickCount = 0; // Counter to track mushroom clicks
+    const imagePaths = [
+        "images/shaman/Gandalf Grey.jpg",
+        "images/shaman/Lord Of The Rings Wallpaper.jpg",
+        "images/shaman/shaman.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    const mushroom = document.getElementById("mushroom");
+
+    // Create an input field to appear when the mushroom is clicked
+    mushroom.addEventListener("click", function() {
+        mushroomClickCount++;
+
+        // Check if the input field already exists
+        if (!document.getElementById("mushroomInput")) {
+            // Create the input field
+            const inputField = document.createElement("input");
+            inputField.id = "mushroomInput";
+            inputField.type = "text";
+            inputField.placeholder = "picking up on mushrooms?";
+            inputField.style.position = "absolute";
+            inputField.style.top = `${mushroom.offsetTop}px`;
+            inputField.style.left = `${mushroom.offsetLeft + 40}px`; // Position it to the right of the mushroom
+
+            // Append the input field to the body
+            document.body.appendChild(inputField);
+
+            // Focus on the input field to start typing
+            inputField.focus();
+
+            // Event listener to check the input value when the user presses "Enter"
+            inputField.addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    const userInput = inputField.value.toLowerCase();
+
+                    if (mushroomClickCount >= 5) {
+                        inputField.value = "no mushrooms";
+                        inputField.disabled = true;
+                    } else if (userInput.includes("yes")) {
+                        inputField.value = "i don't like you, go away";
+                        inputField.disabled = true;
+                    } else if (userInput.includes("no")) {
+                        inputField.value = "good";
+                        inputField.disabled = true;
+                    } else {
+                        inputField.value = "";
+                        inputField.placeholder = "are you testing me?";
+                    }
+                }
+            });
+        } else {
+            // If the input field already exists and click count reaches 5, update message
+            const inputField = document.getElementById("mushroomInput");
+            if (mushroomClickCount >= 5) {
+                inputField.value = "no mushrooms";
+                inputField.disabled = true;
+            }
+        }
+    });
+</script>
+<script>
+    let setLinkClickCount = 0; // Counter to track the number of clicks on the link
+
+    document.getElementById("setLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+
+        setLinkClickCount++;
+
+        if (setLinkClickCount === 5) {
+            // Redirect to the specified URL after the 5th click
+            window.location.href = "https://en.wikipedia.org/wiki/Set_(deity)";
+        }
+    });
+
+    // Listen for keydown events
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
+                changeImage(-1);  // Move to the previous image
+            } else if (event.key === "ArrowRight") {
+                changeImage(1);  // Move to the next image
+            }
+        });
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Shamanic Yoga in da Cyprus. Ayia Napa at its finest!">
+    <title>Modern Shamanic Yoga</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header .overlay h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header .overlay p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .classes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .class {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .sale-banner {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            transform: translateY(-50%);
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+<header>
+    <img id="headerImage" src="images/yoga/mahadev.jpg" alt="Modern Shamanic Yoga image">
+    <div class="overlay">
+        <h1>Yoga</h1>
+        <p>breath. health. wealth. Yeath.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Yoga</h2>
+    <p style="text-align:center">Yoga is not fitness. It's not. I don't preach styles, nor do I teach.
+        There is a deep deep self to be found while practicing ashanas. The self will be you guide. The self is you.</p>
+</section>
+
+<section id="classes">
+    <h2>Classes</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga</h3>
+            <p>You. Me. Us. Your feet. Assistance. Ashanas. *helps*</p>
+            <p><strong>Duration:</strong> 108 minutes</p>
+            <p><strong>Price:</strong> €99 </p>
+        </div>
+        <div class="class">
+            <h3>Thai Massage</h3>
+            <p>Because I've been to Thailand. More than once. *twice*</p>
+            <p><strong>Duration:</strong> 108 minutes</p>
+            <p><strong>Price:</strong> €99 </p>
+        </div>
+        <div class="class">
+            <h3>Sex</h3>
+            <p>Tantra practice for the strongest effects. *XXX*</p>
+            <p><strong>Duration:</strong> 108 minutes</p>
+            <p><strong>Price:</strong> €222 </p>
+        </div>
+        <div class="class">
+            <h3>Free <3</h3>
+            <p>Easy come. Easy go. My practice time. *psy-trance plays in the background*</p>
+            <p><strong>Duration:</strong> 108 minutes (2 times/day)</p>
+            <p><strong>Price:</strong> €free</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Reminder</h2>
+    <p style="text-align:center">Please, book in advance. Especially, if you'd like to have something before the practice.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    let yoga3Count = 0; // Track how many times yoga_3 would be shown
+    const imagePaths = [
+        "images/yoga/mahadev.jpg",
+        "images/yoga/yoga class.jpg",
+        "images/yoga/buddha.jpg"
+    ];
+    const sethImagePaths = [
+        "images/yoga/shaman.jpg",
+        "images/yoga/modern shaman.jpg",
+        "images/yoga/very modern shaman.jpg",
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+
+        if (currentIndex === 2) { // If it's the third image (index 2)
+            yoga3Count++; // Increment the count each time yoga_3 would be shown
+
+            if (yoga3Count === 2 && !sessionStorage.getItem('sethImageDisplayed')) {
+                const randomIndex = Math.floor(Math.random() * sethImagePaths.length);
+                headerImage.src = sethImagePaths[randomIndex];
+                sessionStorage.setItem('sethImageDisplayed', 'true'); // Set the flag in sessionStorage
+            } else {
+                headerImage.src = imagePaths[currentIndex];
+            }
+        } else {
+            headerImage.src = imagePaths[currentIndex];
+        }
+    }
+
+    // Listen for keydown events
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
+                changeImage(-1);  // Move to the previous image
+            } else if (event.key === "ArrowRight") {
+                changeImage(1);  // Move to the next image
+            }
+        });
+</script>
+
+
+</body>
+</html>
