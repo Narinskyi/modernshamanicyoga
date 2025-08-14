@@ -214,4 +214,874 @@
         });
     </script>
 </body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
+<body>
+<header>
+    <img id="headerImage" src="images/spa/yoga%20cyprus.jpg" alt="Spa Yoga image">
+    <div class="overlay">
+        <h1>Spa</h1>
+        <p>a room, no sauna, a stool. Aum.</p>
+    </div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="shaman.html">Shaman</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="blog.html">IQ</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>The Place</h2>
+    <p>You're welcome to hang out at my place. Go for it, check out the WC! Get some tea. Play drums. Sorry, no drums. Just be mindful of whatever it is you are mindful of.</p>
+</section>
+
+<section id="classes">
+    <h2>Activities</h2>
+    <div class="classes">
+        <div class="class">
+            <h3>Yoga Studio</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Meditation Center</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Buddhist Temple</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Shower</h3>
+            <p><strong>Price:</strong> €11 per hour </p>
+        </div>
+        <div class="class">
+            <h3>Retreat</h3>
+            <p><strong>Before:</strong> 11 pm please </p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Spa</h2>
+    <p style="text-align:center">I just moved to ***, so this is it. Hope to see you in a rented house anytime soon. Just testing the audience for now.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shamanic Yoga</p>
+    <p><small>May there be peace among all sentient beings. Om. Shanti. Shanti.</small></p>
+    <p><small>Legal Disclaimer: The content provided on this site is for informational purposes only and does not constitute any form of financial or transactional charge.</small></p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imagePaths = [
+        "images/spa/yoga cyprus.jpg",
+        "images/spa/yoga napa.jpg",
+        "images/spa/shamanic yoga.jpg"
+    ];
+    const headerImage = document.getElementById("headerImage");
+
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + imagePaths.length) % imagePaths.length;
+        headerImage.src = imagePaths[currentIndex];
+    }
+
+    // Listen for keydown events
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            changeImage(-1);  // Move to the previous image
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);  // Move to the next image
+        }
+    });
+</script>
+</body>
 </html>
