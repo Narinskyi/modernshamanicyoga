@@ -164,8 +164,18 @@
     <h2>Home</h2>
     <p>6:00 - 22:00. Except Mondays. I can still do Mondays. Please book Mondays.</p>
     <p><strong>come:</strong> 123 Yoga Lane, Ayia Napa, Cyprus</p>
-    <p><img src="images/home/shaman%20cyprus.jpg" style="height:11em; border-radius:5px" alt="Map to location"></p>
+    <div style="position: relative; height: 11em;">
+        <img src="images/home/shaman%20cyprus.jpg"
+             style="height: 11em; border-radius: 5px; position: absolute; left: 0;"
+             alt="Map to location">
 
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;">
+        <span id="warningLabel" style="display: none; position: absolute; top: -1.8em; left: 50%; transform: translateX(-50%); white-space: nowrap;">
+            you don't have to do this, ok?
+        </span>
+            <button id="myButton">click</button>
+        </div>
+    </div>
     <p><strong>email:</strong> iaskthebuddha@gmail.com</p>
     <p>I speak Russian. Я говорю на Раккате. 𓀁 𓂀 𓁶</p>
     <p>
@@ -216,6 +226,30 @@
                 changeImage(1);  // Move to the next image
             }
         });
+
+    let clickCount = 0;
+    const label = document.getElementById('warningLabel');
+    const button = document.getElementById('myButton');
+
+    button.addEventListener('click', function() {
+        clickCount++;
+
+        // Toggle label on odd clicks
+        if (clickCount <= 7) {
+            if (clickCount % 2 === 1) {
+                label.style.display = 'inline';
+            } else {
+                label.style.display = 'none';
+            }
+        }
+
+        // Disable button after 7th click
+        if (clickCount >= 7) {
+            button.disabled = true;
+        }
+
+        console.log("Button clicked:", clickCount);
+    });
 </script>
 </body>
 </html>
